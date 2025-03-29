@@ -187,12 +187,6 @@ paths:
         - Bearer: []
       parameters:
         - in: path
-          name: accountId
-          description: ID du compte
-          required: true
-          schema:
-            type: integer
-        - in: path
           name: transactionId
           description: ID de la transaction
           required: true
@@ -212,7 +206,6 @@ paths:
         "500":
           description: Erreur interne du serveur
 
-  /transaction/{transactionId}:
     patch:
       tags:
         - Transactions Module
@@ -225,7 +218,7 @@ paths:
           required: true
           description: ID de la transaction à mettre à jour
           schema:
-            type: string
+            type: integer
       requestBody:
         required: true
         content:
