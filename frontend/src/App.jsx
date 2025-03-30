@@ -2,8 +2,11 @@ import "./style.scss";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Hearder } from "./components/header/Hearder.jsx";
-import {Footer} from "./components/footer/Footer.jsx";
-import {Home} from "./pages/home/HomePage.jsx"
+import { Footer } from "./components/footer/Footer.jsx";
+
+import { HomePage } from "./pages/home/HomePage.jsx"
+import { LoginPage } from "./pages/login/LoginPage.jsx";
+import { UserPage } from "./pages/user/UserPage.jsx";
 
 
 function App() {
@@ -11,7 +14,9 @@ function App() {
     <>
         <Hearder/>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/user" element={<UserPage />} />
         </Routes>
         <Footer/>
     </>

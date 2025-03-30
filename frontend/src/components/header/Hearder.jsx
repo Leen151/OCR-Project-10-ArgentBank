@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 export const Hearder = () => {
   return (
-      <nav class="main-nav">
+      <nav className="main-nav">
         <NavLink className="main-nav-logo" to="/">
           <img className="main-nav-logo-image" src={Logo} alt="Argent Bank Logo"/>
           <h1 className="sr-only">Argent Bank</h1>

@@ -6,7 +6,7 @@ import SecurityIcon from "../../assets/icon-security.png"
 import { Banner } from '../../components/banner/Banner'
 import { InformationCard } from '../../components/informationCard/InformationCard'
 
-export const Home = () => {
+export const HomePage = () => {
   const features = [
     {
       icon: ChatIcon,
