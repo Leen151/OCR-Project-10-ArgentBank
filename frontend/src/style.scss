@@ -21,6 +21,11 @@ body{
   flex: 1;
 }
 
+i{
+  display: inline-block;
+  padding-right: 5px;
+}
+
 .bg-dark {
   background-color: #12002b;
 }
@@ -102,6 +107,40 @@ body{
 .hero-content .text {
   margin-bottom: 0;
   font-size: 0.9rem;
+}
+
+.error-message{
+  color: darkred;
+}
+
+.main-nav-link{
+  display: flex;
+  gap: 15px;
+  font-weight: bold;
+}
+
+.user-profile{
+  text-decoration: none;
+}
+
+.edit-form-inputs{
+  padding: 10px 0;
+}
+
+.edit-form-inputs label{
+  margin: 0 5px 0 10px;
+}
+
+.edit-form-inputs input{
+  margin: 0 10px 0 0;
+}
+
+.form-buttons button{
+  margin: 0 8px;
+}
+
+.logout{
+  cursor: pointer;
 }
 
 @media (min-width: 920px) {

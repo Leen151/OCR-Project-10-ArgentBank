@@ -12,13 +12,13 @@ import { UserPage } from "./pages/user/UserPage.jsx";
 function App() {
   return (
     <>
-        <Hearder/>
-        <Routes>
-          <Route path="/" element={<HomePage/>} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/user" element={<UserPage />} />
-        </Routes>
-        <Footer/>
+      <Hearder/>
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/login" element={<LoginPage/>} />
+        <Route path="/profil" element={<UserPage />} />
+      </Routes>
+      <Footer/>
     </>
   )
 }
