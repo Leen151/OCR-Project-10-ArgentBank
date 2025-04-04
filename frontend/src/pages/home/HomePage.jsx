@@ -4,7 +4,7 @@ import MoneyIcon from "../../assets/icon-money.png"
 import SecurityIcon from "../../assets/icon-security.png"
 
 import { Banner } from '../../components/banner/Banner'
-import { InformationCard } from '../../components/informationCard/InformationCard'
+import { FeatureCard } from '../../components/featureCard/FeatureCard'
 
 export const HomePage = () => {
   const features = [
@@ -36,7 +36,7 @@ export const HomePage = () => {
         <h2 className="sr-only">Features</h2>
         
         {features.map((feature, index) => (
-          <InformationCard key={index} icon={feature.icon} alt={feature.alt} title={feature.title} text={feature.text} />
+          <FeatureCard key={index} icon={feature.icon} alt={feature.alt} title={feature.title} text={feature.text} />
         ))}
         
       </section>
