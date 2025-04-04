@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const InformationCard = ({icon, alt, title, text}) => {
+export const FeatureCard = ({icon, alt, title, text}) => {
   return (
-    <div class="feature-item">
+    <div className="feature-item">
       <img src={icon} alt={alt} className="feature-icon" />
       <h3 className="feature-item-title">{title}</h3>
       <p>
